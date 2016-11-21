@@ -18,9 +18,10 @@ Reader r=new InputStreamReader(is);
 
 String st="";
  System.out.println("REPL input:");
+ BufferedReader br=new BufferedReader(r);
 while(!st.equals("q")){
     try{
- BufferedReader br=new BufferedReader(r);
+ 
  st=br.readLine();
 }catch(Exception e)
       {
